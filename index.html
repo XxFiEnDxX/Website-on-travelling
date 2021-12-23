@@ -22,7 +22,8 @@
         </ul>
         <a class="nav-brand" href="#">Voyagers</a>
         <ul class="nav-items item-right">
-          <li class="nav-item"><a class="nav-link" href="#">LogIn</a></li>
+          <img src="images/moon.png" id="dark-mode" alt="">
+          <li class="nav-item"><a class="nav-link" href="#">Log In</a></li>
           <li class="nav-item"><a class="nav-link" href="#">Sign Up</a></li>
         </ul>
       </nav>
@@ -30,11 +31,11 @@
       <div class="hero">
         <div class="heading">
           <h1 class="heading-primary">
-            Experience the beauty of <span class="india">इंडिया</span> with us.
+            EXPERIENCE THE BEAUTY OF <span class="india">इंडिया</span> WITH US.
           </h1>
-          <h3 class="heading-secondary">Travle the beauty of India with us</h3>
+          <h3 class="heading-secondary">DARE TO LIVE THE LIFE YOU'VE ALWAYS WANTED.</h3>
           <a class="button-primary" href="#"
-            >Travel Now <span class="right-arrow">&#8594;</span></a
+            >TRAVEL NOW <span class="right-arrow">&#8594;</span></a
           >
         </div>
       </div>
@@ -81,5 +82,16 @@
         <div class="feature-image feature-image-4">&nbsp;</div>
       </div>
     </section>
+  <script>
+      var icon = document.getElementById("dark-mode");
+      icon.onclick = function(){
+        document.body.classList.toggle("dark-theme")
+        if(document.body.classList.contains("dark-theme")){
+          icon.src = "images/sun.png";
+        }else{
+          icon.src = "images/moon.png"
+        }
+      }
+  </script>
   </body>
 </html>
