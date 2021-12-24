@@ -32,9 +32,9 @@
       <div class="hero">
         <div class="heading">
           <h1 class="heading-primary">
-            EXPERIENCE THE BEAUTY OF <span class="india">इंडिया</span> WITH US.
+            EXPERIENCE THE BEAUTY OF <span class="india">इंडिया</span> WITH US
           </h1>
-          <h3 class="heading-secondary">DARE TO LIVE THE LIFE YOU'VE ALWAYS WANTED.</h3>
+          <h3 class="heading-secondary">DARE TO LIVE THE LIFE YOU'VE ALWAYS WANTED</h3>
           <a class="button-primary" href="#"
             >TRAVEL NOW <span class="right-arrow">&#8594;</span></a
           >
@@ -84,15 +84,31 @@
       </div>
     </section>
   <script>
-      var icon = document.getElementById("dark-mode");
-      icon.onclick = function(){
+      const icon = document.getElementById("dark-mode");
+      icon.addEventListener('click', function(){
         document.body.classList.toggle("dark-theme")
         if(document.body.classList.contains("dark-theme")){
           icon.src = "images/sun.png";
         }else{
           icon.src = "images/moon.png"
         }
+      })
+      const header = document.querySelector('.header')
+      const navbar = document.querySelector('.navbar')
+      const stickyNav = function(entries){
+        const [entry] = entries
+        if(!entry.isIntersecting){
+        navbar.style.backgroundColor = '#2b2b2b'
+        }
+        if(entry.isIntersecting){
+          navbar.style.backgroundColor = 'transparent'
+        }
       }
+      const observer = new IntersectionObserver(stickyNav,{
+        root:null,
+        threshold:0.1
+      });
+      observer.observe(header)
   </script>
   </body>
 </html>
