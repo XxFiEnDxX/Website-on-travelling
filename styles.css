@@ -24,7 +24,7 @@ body {
   background-color: #eee;
 }
 /* dark theme */
-.dark-theme{
+.dark-theme {
   --color-black: rgb(223, 223, 223);
   --color-white: rgb(27, 27, 27);
 }
@@ -68,7 +68,7 @@ body {
   align-self: center;
   font-family: "Cookie", cursive;
 }
-#dark-mode{
+#dark-mode {
   padding-top: 0.8rem;
   width: 30px;
   height: 30px;
@@ -83,6 +83,9 @@ body {
     ),
     url("images/sunHD.jpg");
   height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   background-position: center;
 }
 /* hero headings */
@@ -91,10 +94,7 @@ body {
   flex-direction: column;
   display: flex;
   position: absolute;
-  top: 30%;
-  right: 20%;
-  left: 1%;
-  transform: translateX(-50%, -50%);
+
   align-items: center;
 }
 .heading-primary {
@@ -119,14 +119,10 @@ body {
 }
 /* hero button  */
 .button-primary {
-  align-items: center;
-  position: absolute;
-  top: 80%;
-  right: 29%;
   font-size: 2rem;
   margin-top: 3rem;
   padding: 1rem 2rem;
-  border-radius:8px;
+  border-radius: 8px;
   text-align: center;
   text-decoration: none;
   background-color: var(--color-white);
@@ -136,7 +132,7 @@ body {
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.6);
   transition: all 0.4s;
   font-family: "Varela Round", sans-serif;
-  transition: 0.4s all;
+  transition: 0.2s all;
   animation: 2s moveUp 1s;
   animation-fill-mode: backwards;
 }
