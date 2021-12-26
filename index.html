@@ -23,7 +23,6 @@
         </ul>
         <a class="nav-brand" href="#">Voyagers</a>
         <ul class="nav-items item-right">
-          <img src="images/moon.png" id="dark-mode" alt="">
           <li class="nav-item"><a class="nav-link" href="#">Log In</a></li>
           <li class="nav-item"><a class="nav-link" href="#">Sign Up</a></li>
         </ul>
@@ -36,7 +35,7 @@
           </h1>
           <h3 class="heading-secondary">DARE TO LIVE THE LIFE YOU'VE ALWAYS WANTED</h3>
           <a class="button-primary" href="#"
-            >TRAVEL NOW <span class="right-arrow">&#8594;</span></a
+            >EXPLORE MORE <span class="right-arrow">&#8594;</span></a
           >
         </div>
       </div>
@@ -83,32 +82,52 @@
         <div class="feature-image feature-image-4">&nbsp;</div>
       </div>
     </section>
-  <script>
-      const icon = document.getElementById("dark-mode");
-      icon.addEventListener('click', function(){
-        document.body.classList.toggle("dark-theme")
-        if(document.body.classList.contains("dark-theme")){
-          icon.src = "images/sun.png";
-        }else{
-          icon.src = "images/moon.png"
+    <footer class="footer">
+      <div class="footer-content-left">
+        <ul class="footer-items">
+          <li class="footer-heading">Contributors</li>
+          <li class="footer-item"><a class="footer-link" target="_blank" href="https://www.instagram.com/amit.fiend/">Amit</a></li>
+          <li class="footer-item"><a class="footer-link" target="_blank" href="#">Aaryan</a></li>
+          <li class="footer-item"><a class="footer-link" target="_blank" href="#">AakashDeep</a></li>
+          <li class="footer-item"><a class="footer-link" target="_blank" href="#">Abhinav</a></li>
+        </ul>
+      </div>
+      <div class="footer-content-right">
+
+        <p class="footer-right-text">
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Modi id
+          aspernatur eos sequi exercitationem illo deleniti. Rem odio, dicta
+          repellendus facere illum beatae facilis voluptatum reiciendis voluptatem
+          quisquam ducimus voluptatibus.
+        </p>
+      </div>
+    </footer>
+    <script>
+      // const icon = document.getElementById("dark-mode");
+      // icon.addEventListener('click', function(){
+      //   document.body.classList.toggle("dark-theme")
+      //   if(document.body.classList.contains("dark-theme")){
+      //     icon.src = "images/sun.png";
+      //   }else{
+      //     icon.src = "images/moon.png"
+      //   }
+      // })
+      const header = document.querySelector(".header");
+      const navbar = document.querySelector(".navbar");
+      const stickyNav = function (entries) {
+        const [entry] = entries;
+        if (!entry.isIntersecting) {
+          navbar.style.backgroundColor = "#2b2b2b";
         }
-      })
-      const header = document.querySelector('.header')
-      const navbar = document.querySelector('.navbar')
-      const stickyNav = function(entries){
-        const [entry] = entries
-        if(!entry.isIntersecting){
-        navbar.style.backgroundColor = '#2b2b2b'
+        if (entry.isIntersecting) {
+          navbar.style.backgroundColor = "transparent";
         }
-        if(entry.isIntersecting){
-          navbar.style.backgroundColor = 'transparent'
-        }
-      }
-      const observer = new IntersectionObserver(stickyNav,{
-        root:null,
-        threshold:0.1
+      };
+      const observer = new IntersectionObserver(stickyNav, {
+        root: null,
+        threshold: 0.1,
       });
-      observer.observe(header)
-  </script>
+      observer.observe(header);
+    </script>
   </body>
 </html>

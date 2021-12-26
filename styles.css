@@ -10,6 +10,7 @@
   --color-black: rgb(27, 27, 27);
   --color-orange-light: rgb(255, 183, 125);
   --color-gray: rgb(73, 73, 73);
+  --color-gray-dark: #333;
   --color-gray-light: rgb(122, 122, 122);
 }
 * {
@@ -239,4 +240,55 @@ body {
 .feature-text-4 {
   color: var(--color-white);
   background-color: var(--color-black);
+}
+
+.footer {
+  height: 40rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: var(--color-gray-dark);
+  font-family: "Nunito", sans-serif;
+}
+.footer-content-left {
+  display: flex;
+  border-right: 1px solid var(--color-gray-light);
+  justify-content: center;
+  width: 50%;
+}
+.footer-content-right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+}
+.footer-heading {
+  font-size: 3rem;
+  list-style: none;
+  color: var(--color-gray-light);
+  height: 5rem;
+}
+.footer-right-text {
+  width: 60%;
+}
+
+.footer-item {
+  list-style: none;
+}
+
+.footer-link {
+  text-decoration: none;
+  color: var(--color-white);
+  font-size: 2rem;
+}
+.footer-right-text {
+  font-size: 2rem;
+  color: var(--color-white);
+}
+.footer-right-text::before {
+  content: "Story Of This Project";
+  display: block;
+  color: var(--color-gray-light);
+  font-size: 3rem;
+  padding-bottom: 1rem;
 }
