@@ -1,0 +1,81 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;1,200&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Varela+Round&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Laila:wght@300;400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@300;400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cookie&display=swap");
+:root {
+  --color-white: rgb(223, 223, 223);
+  --color-white-dark: rgba(91, 91, 91, 0.61);
+  --color-orange: rgb(255, 108, 71);
+  --color-black: rgb(27, 27, 27);
+  --color-orange-light: rgb(255, 183, 125);
+  --color-gray: rgb(73, 73, 73);
+  --color-gray-light: rgb(122, 122, 122);
+  --gradient-v1: rgba(0, 0, 0, 0.651);
+  --gradient-v2: rgba(0, 0, 0, 0.329);
+}
+* {
+  padding: 0;
+  margin: 0;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  box-sizing: border-box;
+  background-color: rgb(77, 77, 77);
+}
+/* dark theme */
+.dark-theme {
+  --color-black: rgb(223, 223, 223);
+  --color-white: rgb(27, 27, 27);
+  --gradient-v1: rgba(0, 0, 0, 0.952);
+  --gradient-v2: rgba(0, 0, 0, 0);
+}
+.navbar {
+  flex-direction: row;
+  background-color: transparent;
+  display: flex;
+  width: 100%;
+  position: fixed;
+  justify-content: space-between;
+  transition: 0.4s all;
+  height: 6rem;
+}
+.nav-items {
+  display: flex;
+  margin-left: 3rem;
+  align-items: center;
+}
+.nav-item {
+  list-style: none;
+  padding: 1rem;
+  align-self: center;
+  font-size: 2rem;
+  font-family: "Nunito", sans-serif;
+  transition: 0.3s opacity;
+}
+.item-right {
+  margin-right: 3rem;
+}
+.nav-link {
+  text-decoration: none;
+  color: #fff;
+}
+.nav-item:hover {
+  opacity: 0.8;
+}
+.nav-brand {
+  text-decoration: none;
+  /* color: var(--color-orange-light); */
+  color: var(--color-white);
+  font-size: 4rem;
+  align-self: center;
+  font-family: "Cookie", cursive;
+}
+#dark-mode {
+  /* padding-top: 0.8rem; */
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+}
