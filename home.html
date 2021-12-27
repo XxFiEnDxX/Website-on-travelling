@@ -16,8 +16,7 @@
                 </ul>
                 <a class="nav-brand" href="index.html">Voyagers</a>
                 <ul class="nav-items item-right">
-                    <!-- <img src="images/moon.png" id="dark-mode" /> -->
-                    <li class="nav-item"><a class="nav-link" href="#">Log In</a></li>
+                    <li class="nav-item"><a class="nav-link" href="login.html">Log In</a></li>
                     <li class="nav-item"><a class="nav-link" href="#">Sign Up</a></li>
                 </ul>
             </nav>
@@ -49,13 +48,26 @@
             <div class="homeHeading"><h1>Popular places</h1></div>
             <div class="s2">
                 <div class="recent-visits">
-                    <div>
-                        <img src="images/pexels.jpg" alt=""
-                            class="recent-visits-img" />
-                    </div>
-                    <div>
-                        <span>Goa</span>
-                    </div>
+                    <a href="goa.html">
+                        <div>
+                            <img src="images/beachHD.jpg" alt=""
+                                class="recent-visits-img" />
+                        </div>
+                        <div>
+                            <span>Goa</span>
+                        </div>
+                    </a>
+                </div>
+                <div class="recent-visits">
+                    <a href="jaipur.html">
+                        <div>
+                            <img src="images/hawa mahal-1.jpg" alt=""
+                                class="recent-visits-img" />
+                        </div>
+                        <div>
+                            <span>Jaipur</span>
+                        </div>
+                    </a>
                 </div>
                 <div class="recent-visits">
                     <div>
@@ -72,62 +84,48 @@
                             class="recent-visits-img" />
                     </div>
                     <div>
-                        <span>Rajasthan</span>
-                    </div>
-                </div>
-                <div class="recent-visits">
-                    <div>
-                        <img src="images/pexels.jpg" alt=""
-                            class="recent-visits-img" />
-                    </div>
-                    <div>
                         <span>Amritsar</span>
                     </div>
                 </div>
             </div>
-            <!-- <div><h1>GOA</h1></div>
-                <div><h1>GOA</h1></div>
-                <div><h1>GOA</h1></div>
-                <div><h1>GOA</h1></div> -->
         </section>
         <section class="section-3">
             <div class="homeHeading">
                 <h2>Recent Blogs</h2>
             </div>
             <div class="s-3">
-                <div class="recent-blogs" id="recent-blog-1">
-                    <div class="r-blog-img">
-                        <img src="images/scene-2.jpg" alt="" class="scene">
+                <a href="goa.html">
+                    <div class="recent-blogs" id="recent-blog-1">
+                        <div class="r-blog-img">
+                            <img src="images/2.jpg" alt="" class="scene">
+                        </div>
+                        <div class="r-blog-head-text">
+                            <h1 class='blog-head'>A guide to visit the majestic Dudhsagar waterfalls in Goa</h1>
+                            <p>
+                                In the last few years, the Dudhsagar waterfalls have become a popular weekend destination, especially for those
+                                travelling from cities like Mumbai, Pune and Bangalore (all thanks to a certain Bollywood movie). Most tourists
+                                to Goa these days make the Dudhsagar waterfalls a part of their itinerary for Goa.
+                            </p>
+                        </div>           
                     </div>
-                    <div class="r-blog-head-text">
-                        <h1 class='blog-head'>Lorem ipsum dolor sit amet?</h1>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing
-                            elit. Fuga laborum Lorem ipsum dolor sit amet
-                            consectetur adipisicing elit. Exercitationem,
-                            labore? Saepe vitae perspiciatis aspernatur nemo non
-                            ratione impedit incidunt tempora.libero enim saepe!
-                            Unde
-                            consequuntur, nulla doloribus accusamus praesentium
-                            doloremque.</p>
-                    </div>
+                </a>
                 </div>
                 <br>
-                <div class="recent-blogs" id="recent-blog-2">
-                    <div class="r-blog-head-text">
-                        <h1 class='blog-head'>Lorem ipsum dolor sit amet,
-                            quaerat?</h1>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing
-                            elit. Fuga laborum libero enim Lorem ipsum dolor sit
-                            amet consectetur, adipisicing elit.
-                            Nobis illum inventore sapiente in alias asperiores
-                            qui incidunt amet laudantium numquam. saepe! Unde
-                            consequuntur, nulla doloribus accusamus praesentium
-                            doloremque.</p>
+                <a href="jaipur.html">
+                    <div class="recent-blogs" id="recent-blog-2">
+                        <div class="r-blog-head-text">
+                            <h1 class='blog-head'>Jaipur - The Pink City</h1>
+                            <p>Jaipur is the capital of India's Rajasthan state. It evokes the royal family that once ruled
+                                the region and that, in 1727, founded what is now called the Old City, or “Pink City” for its
+                                trademark building color.  The city of Jaipur is one of India's architectural wonders. It 
+                                houses some of the country's most ornate royal palaces -- elaborate structures designed 
+                                hundreds of years ago that still captivate visitors today.</p>
+                        </div>
+                        <div class="r-blog-img">
+                            <img src="images/jaipur-1.jpg" alt="" class="scene">
+                        </div>
                     </div>
-                    <div class="r-blog-img">
-                        <img src="images/scene-3.jpg" alt="" class="scene">
-                    </div>
-                </div>
+                </a>
                 <br>
                 <div class="recent-blogs" id="recent-blog-3">
                     <div class="r-blog-img">
@@ -188,33 +186,12 @@
             </div>
             <div class="footer-content-right">
                 <p class="footer-right-text">
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                    Modi id
-                    aspernatur eos sequi exercitationem illo deleniti. Rem odio,
-                    dicta
-                    repellendus facere illum beatae facilis voluptatum
-                    reiciendis
-                    voluptatem quisquam ducimus voluptatibus.
+                    We wanted to make a project that incorporates everything we were taught in college as of yet as
+                    well as what we know of our own.
+                    This travel webpage uses a plethora of html and css functions to perfectly showcase our
+                    knowledge on the suject.
                 </p>
             </div>
         </footer>
     </body>
-    <script>
-              const header = document.querySelector(".header");
-      const navbar = document.querySelector(".navbar");
-      const stickyNav = function (entries) {
-        const [entry] = entries;
-        if (!entry.isIntersecting) {
-          navbar.style.backgroundColor = "#0f0f0d";
-        }
-        if (entry.isIntersecting) {
-          navbar.style.backgroundColor = "transparent";
-        }
-      };
-      const observer = new IntersectionObserver(stickyNav, {
-        root: null,
-        threshold: 0.1,
-      });
-      observer.observe(header);
-    </script>
 </html>
