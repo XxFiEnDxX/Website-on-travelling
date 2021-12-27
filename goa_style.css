@@ -90,13 +90,15 @@ main{
   box-shadow: 0 0 2px rgb(90, 90, 90);
 }
 .scene-image{
-  width: 1180px;
-  height: 600px;
   margin: 0 auto;
   padding: 200px 0;
   background-image: url('images/7.jpg');
   background-size: cover;
   box-sizing: border-box;
+}
+
+img{
+  padding: 0rem 1rem;
 }
 
 h1{
@@ -135,7 +137,9 @@ h2, .img-text{
 }
 
 #track-img{
-  margin-left: 18vw;
+  /* margin-left: 18vw; */
+  align-items: center;
+  width: 100%;
 }
 
 .footer {
