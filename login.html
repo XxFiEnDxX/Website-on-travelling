@@ -1,0 +1,58 @@
+ <html lang="en">
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Voyagers | Home</title>
+    <link rel="stylesheet" href="login.css">
+  </head>
+  <body>
+    <header class="header">
+      <nav class="navbar">
+        <ul class="nav-items">
+          <li class="nav-item"><a class="nav-link" href="home.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+        </ul>
+        <a class="nav-brand" href="index.html">Voyagers</a>
+        <ul class="nav-items item-right">
+          <!-- <img src="images/moon.png" id="dark-mode" /> -->
+          <li class="nav-item"><a class="nav-link" href="#">Log In</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Sign Up</a></li>
+        </ul>
+      </nav>
+    </header>
+    <!-- enter your code here -->
+    <center><table border="1"><tr><td><form action="action_page.php"
+              method="post">
+              <div class="imgcontainer">
+                <center> <img src="sign.png" width="200" height="200"></center><br
+              </div>
+
+              <div class="container">&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+                &nbsp
+                <label for="uname"><b>Username</b></label>
+                <input type="text" placeholder="Enter Username" name="uname"
+                  required> &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp<br><br>
+                &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+                <label for="psw"><b>Password</b></label>
+                <input type="password" placeholder="Enter Password" name="psw"
+                  required>
+                &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp<br><br>
+                <center>
+                  <button type="submit">Login</button>
+                  <label>
+                    <input type="checkbox" checked="checked" name="remember">
+                    Remember me<br>
+                  </label></center>
+              </div>
+
+              <div class="container" style="background-color:#f1f1f1">
+                <center>
+                  <button type="button" class="cancelbtn">Cancel</button>
+                  <span class="psw">Forgot <a href="#">password?</a></span></center>
+              </div>
+            </form></td></tr> </table></center>
+  </body>
+
+</html>
