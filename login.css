@@ -13,7 +13,7 @@
   --color-orange-light: rgb(255, 183, 125);
   --color-gray: rgb(73, 73, 73);
   --color-gray-light: rgb(122, 122, 122);
-  --color-blue-shade:#427e99;
+  --color-blue-shade:#43caff;
   --gradient-v1: rgba(0, 0, 0, 0.651);
   --gradient-v2: rgba(0, 0, 0, 0.329);
 }
@@ -92,6 +92,7 @@ body {
   border-radius: 0.5rem;
   display: flex;
   margin:0rem 25% 0rem;
+  padding-top: 3rem;
   padding-bottom: 8rem;
   flex-direction: column;
   justify-content: center;
@@ -109,12 +110,17 @@ form{
   /* padding-top: 1rem; */
 }
 .div1{
-  background-color: var(--color-blue-shade);
-  width: 100%;
+  /* background-color: var(--color-blue-shade); */
+  /* width: ; */
   height: 10rem;
+  padding-top: 3rem;
+  padding-left: 28rem;
 }
-.div2{
-  /* display: flex; */
+.div1 img{
+  width: 100px;
+  height: 100px;
+  display: flex;
+  align-items: center;
 }
 .logindetail{
   display: flex;

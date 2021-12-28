@@ -126,7 +126,7 @@ main{
     top: 100%; left: 0; right: 0;
     padding: 10px;
     padding-top: 49px;
-    font-family: 'Century Gothic';
+    font-family: 'PT Sans', sans-serif;
     box-shadow: 0 0 2px rgb(255, 255, 255);
 }
 .scene-image{
