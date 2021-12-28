@@ -227,13 +227,13 @@ body {
   background-position: center;
 }
 .feature-text {
-  width: 40%;
+  width: 45%;
   align-self: center;
   font-size: 2rem;
   font-family: "Red Hat Display", sans-serif;
   letter-spacing: 3px;
   line-height: 4rem;
-  padding: 32rem 10rem;
+  padding: 27.8rem 10rem;
   border: 2px solid var(--color-black);
 }
 .feature-text-2,
