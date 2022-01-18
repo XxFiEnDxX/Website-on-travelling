@@ -1,53 +1,51 @@
 <html lang="en">
 
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Voyagers | Login</title>
-    <link rel="icon" href="https://img.icons8.com/ios/50/ffffff/marker-v.png">
-    <link rel="stylesheet" href="login.css">
-  </head>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Voyagers | Login</title>
+  <link rel="icon" href="https://img.icons8.com/ios/50/ffffff/marker-v.png">
+  <link rel="stylesheet" href="login.css">
+</head>
 
-  <body>
-    <header class="header">
-      <nav class="navbar">
-        <ul class="nav-items">
-          <li class="nav-item"><a class="nav-link" href="home.html">Home</a></li>
-          <li class="nav-item"><a class="nav-link" href="feedback.html">Contact</a></li>
-        </ul>
-        <a class="nav-brand" href="index.html">Voyagers</a>
-        <ul class="nav-items item-right">
-          <!-- <img src="images/moon.png" id="dark-mode" /> -->
-          <li class="nav-item"><a class="nav-link" href="login.html">Log In</a></li>
-          <li class="nav-item"><a class="nav-link" href="#">Sign Up</a></li>
-        </ul>
-      </nav>
-    </header>
-    <!-- enter your code here -->
-    <div class="formDiv">
-      <div class="div1">
-        <img src="sign.png">
+<body>
+  <header class="header">
+    <nav class="navbar">
+      <ul class="nav-items">
+        <li class="nav-item"><a class="nav-link" href="home.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="feedback.html">Contact</a></li>
+      </ul>
+      <a class="nav-brand" href="index.html">Voyagers</a>
+      <ul class="nav-items item-right">
+        <!-- <img src="images/moon.png" id="dark-mode" /> -->
+        <li class="nav-item"><a class="nav-link" href="login.html">Log In</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Sign Up</a></li>
+      </ul>
+    </nav>
+  </header>
+  <!-- enter your code here -->
+  <div class="center">
+    <h1>Login</h1>
+    <form action="">
+      <div class="loginDetail">
+        <input type="text" required>
+        <span></span>
+        <label for="">Username</label>
       </div>
-      <div class="div2">
-        <form action="action_page.php" method="post">
-          <div class="logindetail">
-            <img class="icon" src="https://img.icons8.com/external-kiranshastry-lineal-kiranshastry/50/000000/external-email-interface-kiranshastry-lineal-kiranshastry-1.png"/>
-            <input type="text" placeholder="Email" name="uname"required>
-          </div>
-          <div class="logindetail">
-            <img class="icon" src="https://img.icons8.com/windows/50/000000/key.png" />
-            <input type="password" placeholder="Password" name="psw"required>
-          </div>
-          <button type="submit">Login</button>
-          <!-- <label><input type="checkbox" checked="checked" name="remember">Remember me</label> -->
 
-          <!-- <div class="container">
-            <span class="psw">Forgot <a href="#">password?</a></span>
-          </div> -->
-        </form>
+      <div class="loginDetail">
+        <input type="password" required>
+        <span></span>
+        <label for="">Password</label>
       </div>
-    </div>
-  </body>
+      <div class="pass"><a href="forgot_pass.html">Forget password?</a></div>
+      <input type="submit" value="Login">
+      <div class="signUp">Not a member?
+        <a href="">SignUp</a>
+      </div>
+    </form>
+  </div>
+</body>
 
 </html>
