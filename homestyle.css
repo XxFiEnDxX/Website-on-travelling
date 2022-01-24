@@ -57,7 +57,7 @@ body {
 }
 .navbar {
   flex-direction: row;
-  background-color: #0f0f0d;
+  background-color: transparent;
   display: flex;
   width: 100%;
   position: fixed;

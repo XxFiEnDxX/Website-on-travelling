@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Voyagers | Login</title>
   <link rel="icon" href="https://img.icons8.com/ios/50/ffffff/marker-v.png">
-  <link rel="stylesheet" href="login.css">
+  <link rel="stylesheet" href="signUpStyle.css">
 </head>
 
 <body>
@@ -18,7 +18,7 @@
       </ul>
       <a class="nav-brand" href="index.html">Voyagers</a>
       <ul class="nav-items item-right">
-        <img src="images/moon.png" id="dark-mode" />
+        <img src="images/moon.png" id="dark-mode">
         <li class="nav-item"><a class="nav-link" href="login.html">Log In</a></li>
         <li class="nav-item"><a class="nav-link" href="signUp.html">Sign Up</a></li>
       </ul>
@@ -26,12 +26,17 @@
   </header>
   <!-- enter your code here -->
   <div class="center">
-    <h1>Login</h1>
+    <h1>Sign Up</h1>
     <form action="">
       <div class="loginDetail">
         <input type="text" required>
         <span></span>
         <label for="">Username</label>
+      </div>
+      <div class="loginDetail">
+        <input type="text" required>
+        <span></span>
+        <label for="">Email</label>
       </div>
 
       <div class="loginDetail">
@@ -39,14 +44,14 @@
         <span></span>
         <label for="">Password</label>
       </div>
-      <div class="pass"><a href="forgot_pass.html">Forget password?</a></div>
-      <input type="submit" value="Login">
-      <div class="signUp">Not a member?
-        <a href="signIn.html">SignUp</a>
+
+      <input type="submit" value="Sign up">
+      <div class="signUp">Already a member?
+        <a href="login.html">Login</a>
       </div>
     </form>
   </div>
-    <script>
+  <script>
     const icon = document.getElementById("dark-mode");
     icon.addEventListener('click', function () {
       document.body.classList.toggle("dark-theme")

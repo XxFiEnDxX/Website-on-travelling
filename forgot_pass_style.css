@@ -114,7 +114,7 @@ main{
 .container{
     margin: 3em auto;
     width: 50vw;
-    height: 45vh;
+    height: auto;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;

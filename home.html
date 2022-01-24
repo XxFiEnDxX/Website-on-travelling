@@ -18,6 +18,7 @@
             </ul>
             <a class="nav-brand" href="index.html">Voyagers</a>
             <ul class="nav-items item-right">
+                <img src="images/moon.png" id="dark-mode" />
                 <li class="nav-item"><a class="nav-link" href="login.html">Log In</a></li>
                 <li class="nav-item"><a class="nav-link" href="#">Sign Up</a></li>
             </ul>
@@ -157,17 +158,20 @@
             <ul class="footer-items">
                 <li class="footer-heading">Contributors</li>
                 <li class="footer-item">
-                    <a class="footer-link" target="_blank" href="https://www.instagram.com/amit.fiend/">Amit Kumar Singh</a>
+                    <a class="footer-link" target="_blank" href="https://www.instagram.com/amit.fiend/">Amit Kumar
+                        Singh</a>
                 </li>
                 <li class="footer-item">
-                    <a class="footer-link" target="_blank"
-                        href="https://www.instagram.com/a.a.r.y.a.n.5.4.3/">Aaryan Singh</a>
+                    <a class="footer-link" target="_blank" href="https://www.instagram.com/a.a.r.y.a.n.5.4.3/">Aaryan
+                        Singh</a>
                 </li>
                 <li class="footer-item">
-                    <a class="footer-link" target="_blank" href="https://www.instagram.com/aakashsedha/">AakashDeep Sedha</a>
+                    <a class="footer-link" target="_blank" href="https://www.instagram.com/aakashsedha/">AakashDeep
+                        Sedha</a>
                 </li>
                 <li class="footer-item">
-                    <a class="footer-link" target="_blank" href="https://www.instagram.com/abhinav_02.08_/">Abhinav Gupta</a>
+                    <a class="footer-link" target="_blank" href="https://www.instagram.com/abhinav_02.08_/">Abhinav
+                        Gupta</a>
                 </li>
             </ul>
         </div>
@@ -180,6 +184,33 @@
             </p>
         </div>
     </footer>
+    <script>
+        const icon = document.getElementById("dark-mode");
+        icon.addEventListener('click', function () {
+            document.body.classList.toggle("dark-theme")
+            if (document.body.classList.contains("dark-theme")) {
+                icon.src = "images/sun.png";
+            } else {
+                icon.src = "images/moon.png"
+            }
+        })
+        const header = document.querySelector(".header");
+        const navbar = document.querySelector(".navbar");
+        const stickyNav = function (entries) {
+            const [entry] = entries;
+            if (!entry.isIntersecting) {
+                navbar.style.backgroundColor = "#0f0f0d";
+            }
+            if (entry.isIntersecting) {
+                navbar.style.backgroundColor = "transparent";
+            }
+        };
+        const observer = new IntersectionObserver(stickyNav, {
+            root: null,
+            threshold: 0.1,
+        });
+        observer.observe(header);
+    </script>
 </body>
 
 </html>
