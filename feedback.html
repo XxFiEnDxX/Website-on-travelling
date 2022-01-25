@@ -1,56 +1,86 @@
-<html lang="en">
+<!DOCTYPE html>    
+<html>    
+<head>    
+<meta name="viewport" content="width=device-width, initial-scale=1">   
+<link rel="stylesheet" href="feedback.css"> 
+<style>    
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Voyagers | Contact</title>
-  <link rel="stylesheet" href="feedback.css" />
-  <link rel="icon" href="https://img.icons8.com/ios/50/ffffff/marker-v.png">
-</head>
-
-<body>
+    
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */    
+</style>    
+</head>    
+<body>  
   <header class="header">
     <nav class="navbar">
       <ul class="nav-items">
-        <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
-        <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+        <li class="nav-item"><a class="nav-link" href="home.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="feedback.html">Contact</a></li>
       </ul>
       <a class="nav-brand" href="index.html">Voyagers</a>
       <ul class="nav-items item-right">
+        <img src="images/moon.png" id="dark-mode">
         <li class="nav-item"><a class="nav-link" href="login.html">Log In</a></li>
-        <li class="nav-item"><a class="nav-link" href="#">Sign Up</a></li>
+        <li class="nav-item"><a class="nav-link" href="signUp.html">Sign Up</a></li>
       </ul>
     </nav>
-  </header>
-  <div class='main'>
-    <div>
-
-      <label>Your Name</label>
-      <input type="text" class="btn" />
-    </div>
-    <div>
-
-      <label>Your Email</label>
-      <input type="text" class="btn" />
-    </div>
-    <div>
-
-      <label>Your Phone</label>
-      <input type="text" class="btn" />
-    </div>
-    <div>
-
-      <label>Subject</label>
-      <input type="text" class="btn" />
-    </div>
-    <div>
-
-      <label>Feedback</label>
-      <textarea rows="10" style="width: 700px"></textarea>
-      <input type="submit" value="Send Now" class="btn2" />
-    </div>
-  </div>
-</body>
-
+  </header>  
+  <div class="container">    
+  <h1>FEED BACK FORM</h1>    
+  <form>    
+    <div class="row">    
+      <div class="col-25">    
+        <label for="fname">First Name</label>    
+      </div>    
+      <div class="col-75">    
+        <input type="text" id="fname" name="firstname" placeholder="Your name..">    
+      </div>    
+    </div>    
+    <div class="row">    
+      <div class="col-25">    
+        <label for="lname">Last Name</label>    
+      </div>    
+      <div class="col-75">    
+        <input type="text" id="lname" name="lastname" placeholder="Your last name..">    
+      </div>    
+    </div>    
+    <div class="row">    
+        <div class="col-25">    
+          <label for="email">Mail Id</label>    
+        </div>    
+        <div class="col-75">    
+          <input type="email" id="email" name="mailid" placeholder="Your mail id..">    
+        </div>    
+      </div>    
+    <div class="row">    
+      <div class="col-25">    
+        <label for="country">Country</label>    
+      </div>    
+      <div class="col-75">    
+        <select id="country" name="country">    
+          <option value="none">Select Country</option>    
+          <option value="australia">Australia</option>    
+          <option value="canada">Canada</option>    
+          <option value="usa">USA</option>    
+          <option value="russia">Russia</option>    
+          <option value="japan">Japan</option>    
+          <option value="india">India</option>    
+          <option value="china">China</option>    
+        </select>    
+      </div>    
+    </div>    
+    <div class="row">    
+      <div class="col-25">    
+        <label for="feed_back">Feed Back</label>    
+      </div>    
+      <div class="col-75">    
+        <textarea id="subject" name="subject" placeholder="Write something.." style="height:100px"></textarea>    
+      </div>    
+    </div>    
+    <div class="row">    
+      <input type="submit" value="Submit">    
+    </div>    
+  </form>    
+</div>    
+    
+</body>    
 </html>

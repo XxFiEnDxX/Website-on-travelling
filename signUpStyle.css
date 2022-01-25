@@ -123,6 +123,7 @@ form .loginDetail{
   border: none;
   background: none;
   outline: none;
+  color: var(--color-black);
 }
 .loginDetail label{
   position: absolute;

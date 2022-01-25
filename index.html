@@ -122,22 +122,7 @@
         icon.src = "images/moon.png"
       }
     })
-    const header = document.querySelector(".header");
-    const navbar = document.querySelector(".navbar");
-    const stickyNav = function (entries) {
-      const [entry] = entries;
-      if (!entry.isIntersecting) {
-        navbar.style.backgroundColor = "#0f0f0d";
-      }
-      if (entry.isIntersecting) {
-        navbar.style.backgroundColor = "transparent";
-      }
-    };
-    const observer = new IntersectionObserver(stickyNav, {
-      root: null,
-      threshold: 0.1,
-    });
-    observer.observe(header);
+
   </script>
 </body>
 
